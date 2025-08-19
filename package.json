@@ -2,7 +2,7 @@
   "name": "@lit/lit-starter-js",
   "private": true,
   "version": "2.0.2",
-  "description": "A simple web component",
+  "description": "A simple employee management application built with Lit and Web Components.",
   "main": "my-element.js",
   "module": "my-element.js",
   "type": "module",
@@ -39,7 +39,9 @@
   "author": "Google LLC",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "lit": "^3.2.0"
+    "@vaadin/router": "^2.0.0",
+    "lit": "^3.2.0",
+    "rxjs": "^7.8.2"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
@@ -52,7 +54,7 @@
     "@rollup/plugin-terser": "^0.4.4",
     "@web/dev-server": "^0.1.31",
     "@web/dev-server-legacy": "^1.0.0",
-    "@web/test-runner": "^0.15.0",
+    "@web/test-runner": "^0.15.3",
     "@web/test-runner-playwright": "^0.9.0",
     "@webcomponents/webcomponentsjs": "^2.8.0",
     "eslint": "^8.15.0",

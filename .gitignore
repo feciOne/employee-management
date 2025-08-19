@@ -1,4 +1,5 @@
 /node_modules/
 custom-elements.json
+.DS_Store
 # only generated for size check
 my-element.bundled.js

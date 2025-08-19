@@ -89,6 +89,20 @@ export default {
   rootDir: '.',
   files: ['./test/**/*_test.js'],
   nodeResolve: {exportConditions: mode === 'dev' ? ['development'] : []},
+  coverage: true,
+  coverageConfig: {
+    report: true,
+    reportDir: "coverage",
+    thresholds: {
+      statements: 85,
+      branches: 85,
+      functions: 85,
+      lines: 85,
+    },
+    include: ['src/components/**/*.js'],
+    exclude: ['test/**/*_test.js', 'node_modules/**/*'],
+    reporter: ['html', 'text'],
+  },
   preserveSymlinks: true,
   browsers: commandLineBrowsers ?? Object.values(browsers),
   testFramework: {
